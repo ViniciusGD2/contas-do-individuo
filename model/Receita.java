@@ -1,35 +1,26 @@
-
-package model;
-
-public class Receita{
-    private String origem;
+public class Receita {
+    private int id;
+    private String descricao;
     private double valor;
-    
-// construtor
 
-    public Receita(String origem, double valor) {
-        this.origem = origem;
-        this.valor = valor;
-        
-    }
+    // Construtor padrão (vazio)
+    public Receita() {}
 
- 
-//  getters e setters 
-
- public double getOrigem (String origem){
-        return this.origem;
-    }
-    
-    public void setOrigem (String origem ){
-        this.origem = cliente;
-    }
-    
-    public double getValor (){
-        return this.origem;
-    }
-    
-    public void setValor (String valor){
+    // Construtor com parâmetros
+    public Receita(int id, String descricao, double valor) {
+        this.id = id;
+        this.descricao = descricao;
         this.valor = valor;
     }
-    
+
+    // Getters e Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
+    public String getDescricao() { return descricao; }
+    public void setDescricao(String descricao) { this.descricao = descricao; }
+
+    public double getValor() { return valor; }
+    public void setValor(double valor) { this.valor = valor; }
 }
+
