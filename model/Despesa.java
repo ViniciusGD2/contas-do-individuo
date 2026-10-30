@@ -1,40 +1,58 @@
-package model;
 
-public class Meta {
-    // atributos
-    private String objetivo;
-    private double valorAlvo;
-    private double valorPoupado;
+import model.Despesa;
+import model.Conta;
+import model.Meta;
+import model.Receita;
 
-    // construtor
-    public Meta(String objetivo, double valorAlvo, double valorPoupado) {
-        this.objetivo = objetivo;
-        this.valorAlvo = valorAlvo;
-        this.valorPoupado = valorPoupado;
-    }
+        public class Programa {
+            public static void main(String[] args) {
 
-    // getters e setters
-    public String getObjetivo() {
-        return this.objetivo;
-    }
-
-    public void setObjetivo(String objetivo) {
-        this.objetivo = objetivo;
-    }
-
-    public double getValorAlvo() {
-        return this.valorAlvo;
-    }
-
-    public void setValorAlvo(double valorAlvo) {
-        this.valorAlvo = valorAlvo;
-    }
-
-    public double getValorPoupado() {
-        return this.valorPoupado;
-    }
     
-    public void setValorPoupado(double valorPoupado) {
-        this.valorPoupado = valorPoupado;
+         Conta conta_1 = new Conta();
+        
+        conta_1.numero = 76521;
+        conta_1.cliente = "Darcy";
+        conta_1.saldo = 100.0;
+        conta_1.limite = 100.0;
+        
+
+        Receita valor = new Receita();
+        System.out.println (Receita.getNome());
+        
+        System.out.println(valor.getNome());
+
+
+       
+        Despesa despesa_1 = new Despesa();
+        despesa_1.nome = "aluguel";
+        despesa_1.valor = 500.00;
+        System.out.println (Despesa.getNome());
+        
+ 
+
+
+     
+        System.out.println("=================================");
+        System.out.println("      RELATÓRIO FINANCEIRO"        );
+        System.out.println("=================================");
+
+        System.out.println("Cliente: Emilia Tan");
+        System.out.println("Saldo Atual: R$ " + conta.getSaldo());
+
+        System.out.println("\nReceita:");
+        System.out.println("- Salário Mensal: R$ 2000.0");
+
+        System.out.println("\nDespesa:");
+        System.out.println("- Aluguel: R$ 1200.0");
+        System.out.println("- Status: " + aluguel.getStatus());
+
+        System.out.println("\nMeta:");
+        System.out.println(
+            "- Comprar Computador: R$ " +
+            valorPoupado +
+            " poupados de R$ 3000.0"
+        );
+
+        
     }
 }
