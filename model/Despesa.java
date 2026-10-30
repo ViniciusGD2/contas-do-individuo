@@ -1,58 +1,41 @@
 
-import model.Despesa;
-import model.Conta;
-import model.Meta;
-import model.Receita;
-
-        public class Programa {
-            public static void main(String[] args) {
-
+package model;
+public class Despesa {
     
-         Conta conta_1 = new Conta();
-        
-        conta_1.numero = 76521;
-        conta_1.cliente = "Darcy";
-        conta_1.saldo = 100.0;
-        conta_1.limite = 100.0;
-        
+    //atributos
+    private String descricao;
+    private double valor;
+    private String status;
 
-        Receita valor = new Receita();
-        System.out.println (Receita.getNome());
-        
-        System.out.println(valor.getNome());
+    //construtor 2 parametros
+    public Despesa(String descricao, double valor) {
+        this.descricao = descricao;
+        this.valor = valor;
+        this.status = status;
+    }
 
+    //getters setters
+    public String getDescricao() {
+        return this.descricao;
+    }
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    } 
 
-       
-        Despesa despesa_1 = new Despesa();
-        despesa_1.nome = "aluguel";
-        despesa_1.valor = 500.00;
-        System.out.println (Despesa.getNome());
-        
- 
+    public double getValor() {
+        return this.valor;
+    }
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
 
+    public String getStatus() {
+        return this.status;
+    }
 
-     
-        System.out.println("=================================");
-        System.out.println("      RELATÓRIO FINANCEIRO"        );
-        System.out.println("=================================");
-
-        System.out.println("Cliente: Emilia Tan");
-        System.out.println("Saldo Atual: R$ " + conta.getSaldo());
-
-        System.out.println("\nReceita:");
-        System.out.println("- Salário Mensal: R$ 2000.0");
-
-        System.out.println("\nDespesa:");
-        System.out.println("- Aluguel: R$ 1200.0");
-        System.out.println("- Status: " + aluguel.getStatus());
-
-        System.out.println("\nMeta:");
-        System.out.println(
-            "- Comprar Computador: R$ " +
-            valorPoupado +
-            " poupados de R$ 3000.0"
-        );
-
-        
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
+
+
