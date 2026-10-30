@@ -6,7 +6,9 @@ public class Meta {
     private double valorAlvo;
     private double valorPoupado;
 
-    // construtor
+    
+    public Meta() {}
+
     public Meta(String objetivo, double valorAlvo, double valorPoupado) {
         this.objetivo = objetivo;
         this.valorAlvo = valorAlvo;
